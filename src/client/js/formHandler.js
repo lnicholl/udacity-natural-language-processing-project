@@ -7,7 +7,7 @@ function handleSubmit(event) {
     Client.checkForName(formText)
 
     console.log("::: Form Submitted :::")
-    fetch('http://localhost:8081/aylienapi',
+    fetch('http://localhost:8080/aylienapi',
     {
         method: 'POST',
         body: JSON.stringify({formText}),
