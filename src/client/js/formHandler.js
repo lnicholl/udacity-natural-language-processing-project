@@ -15,7 +15,8 @@ function handleSubmit(event) {
     })
     .then(res => res.json())
     .then(function(res) {
-        document.getElementById('results').innerHTML = `Polarity: ${res.polarity}, Subjectivity: ${res.subjectivity}`   
+        document.getElementById('results').innerHTML = `Polarity: ${res.polarity}, Subjectivity: ${res.subjectivity}`
+        console.log(res)
     }).catch(error => console.log(error));
 }
 
